@@ -120,10 +120,10 @@ results = model.predict(source="datasets/waldo/test/images", save=True)
 
 ## Key metrics from validation set:-
 
-Precision: %
-Recall: XX%
-mAP50: 87%
-F1-score: XX%
+Precision: 0.57
+Recall: 0.75
+mAP50: 0.87
+F1-score: 0.68
 
 ## Visual Outputs
 
