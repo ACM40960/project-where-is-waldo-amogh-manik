@@ -1,5 +1,8 @@
 # Where’s Waldo? – Object Detection using YOLOv8
 
+![waldo](https://github.com/user-attachments/assets/dea551c2-6f3c-4b55-9261-e8b94ef012b7)
+
+
 ## Overview
 This project implements an **object detection model** to automatically find *Waldo* in images using the **YOLOv8 deep learning architecture**.  
 The dataset was prepared, trained, and evaluated in **Google Colab**. Results show how well YOLOv8 can identify Waldo in complex scenes.
@@ -19,7 +22,7 @@ This README follows that principle — you should be able to reproduce the entir
 
 ## Project Structure
 
----
+```
 WhereIsWaldo/
 │── datasets/
 │ └── waldo/ # dataset with train/val/test splits
@@ -33,8 +36,7 @@ WhereIsWaldo/
 │
 │── notebook.ipynb # main Google Colab notebook
 │── README.md # this file
-
----
+```
 ---
 ## Installation & Requirements
 This project runs on **Google Colab** (recommended).  
@@ -60,6 +62,7 @@ val/ → validation images + labels
 
 test/ → testing images + labels
 
+```
 datasets/waldo/
 ├── train/images
 ├── train/labels
@@ -67,7 +70,9 @@ datasets/waldo/
 ├── val/labels
 ├── test/images
 ├── test/labels
-└── data.yaml
+└── data.yaml 
+```
+
 
 ## Data(yaml)
 ```
@@ -81,11 +86,13 @@ names: ['Waldo']
 ```
 
 ## Clone & Setup
+```
 git clone <your-repo-link>
 cd WhereIsWaldo
+```
 
 ## Train the Model
-
+```
 from ultralytics import YOLO
 
 model = YOLO("yolov8s.pt")
@@ -96,13 +103,16 @@ model.train(
     batch=16,
     name="waldo_yolov8s"
 )
+```
 
 ## Evaluate
+```
 metrics = model.val()
 print(metrics)  # mAP, Precision, Recall, F1
 
 Inference
 results = model.predict(source="datasets/waldo/test/images", save=True)
+```
 
 ## Results
 
