@@ -1,0 +1,10 @@
+# Ignore dataset and large files
+datasets/
+runs/
+__pycache__/
+*.pt
+*.onnx
+*.csv
+
+# Ignore notebooks checkpoints
+.ipynb_checkpoints/
