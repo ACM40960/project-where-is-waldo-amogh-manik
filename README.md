@@ -74,7 +74,7 @@ datasets/waldo/
 ```
 
 
-## Data(yaml)
+## Data (yaml)
 ```
 train: /content/datasets/waldo/train/images
 val: /content/datasets/waldo/val/images
