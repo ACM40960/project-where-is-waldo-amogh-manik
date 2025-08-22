@@ -70,12 +70,15 @@ datasets/waldo/
 └── data.yaml
 
 ## Data(yaml)
+```
 train: /content/datasets/waldo/train/images
 val: /content/datasets/waldo/val/images
 test: /content/datasets/waldo/test/images
 
+
 nc: 1
 names: ['Waldo']
+```
 
 ## Clone & Setup
 git clone <your-repo-link>
