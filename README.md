@@ -123,7 +123,9 @@ Precision-Recall
 <img width="611" height="442" alt="waldov8_5" src="https://github.com/user-attachments/assets/61941250-7e44-418e-b14a-6ccd696e21b3" />
 <img width="603" height="451" alt="waldov8_3" src="https://github.com/user-attachments/assets/bd1a4d05-775f-4593-8c02-6f886c5cc780" />
 
+
 Confusion Matrix	
+
 <img width="577" height="497" alt="waldov8_6" src="https://github.com/user-attachments/assets/d01a1fd6-ad3a-4060-a4cb-a1d820b26599" />
 <img width="572" height="490" alt="waldov8_7" src="https://github.com/user-attachments/assets/3912b445-5e1a-4046-8aca-f110a7380d8d" />
 
@@ -141,7 +143,7 @@ Increasing image size (imgsz=960) can improve results but requires more GPU memo
 
 Evaluation metrics (mAP, PR curve) highlight strengths/weaknesses beyond accuracy.
 
-Future Work
+## Future Work
 
 Try larger models (YOLOv8m, YOLOv8l).
 
@@ -151,29 +153,19 @@ Augment dataset with synthetic images to improve robustness.
 
 Deploy as a web app for interactive Waldo detection.
 
-License
+## License
 
 This project is for academic purposes only under UCD’s MSc Data & Computational Science course.
 For external use, please check dataset licenses.
 
-Name: [Your Name]
+## Name: Amogh Agarwal (24217682) & Manik Tomar (24215275)
 
 Course: ACM40960 – Project
 
-Institution: University College Dublin (UCD)
+## Institution: University College Dublin (UCD)
 
 Year: 2025
 
 
----
 
- Why this README will score high:
-- Covers **all required sections** (overview, objectives, dataset, usage, results, future work).  
-- Uses **clean formatting with markdown** (tables, images, code blocks).  
-- Is **self-contained** → anyone can reproduce your project without looking at your code.  
-- Aligns with instructor’s examples (concise, not overloaded).  
-
----
-
-Would you like me to also create a **shorter “lightweight version” of this README** (like a summary) so you can place it on GitHub main page, and keep this **detailed version** in a `/docs/` folder for grading?
 
