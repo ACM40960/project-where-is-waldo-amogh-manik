@@ -1,4 +1,4 @@
-# Where’s Waldo? – Object Detection using YOLOv8
+<img width="850" height="755" alt="The-YOLOv8-architecture-incorporates-a-modified-CSPDarknet53-as-its-core-framework-It" src="https://github.com/user-attachments/assets/cf4d5052-795f-4fbd-9d4e-a55de982f5b6" /># Where’s Waldo? – Object Detection using YOLOv8
 
 ![waldo](https://github.com/user-attachments/assets/dea551c2-6f3c-4b55-9261-e8b94ef012b7)
 
@@ -74,6 +74,56 @@ flowchart TD
     D --> E[Visualization & Results]
 
 ```
+
+## Working Flow
+
+<img width="850" height="755" alt="The-YOLOv8-architecture-incorporates-a-modified-CSPDarknet53-as-its-core-framework-It" src="https://github.com/user-attachments/assets/252afe82-a0ad-4bce-b3a9-7c24779fcf5e" />
+
+YOLOv8 Architecture – Working Flow
+1. Backbone (Feature Extraction)
+
+Conv layers (blue): Reduce image size while extracting low-level to mid-level features.
+
+C2f modules (green): Advanced convolution blocks that improve feature representation (similar to residual connections).
+
+SPPF (light blue): Spatial Pyramid Pooling – Fast, captures features at multiple receptive fields to detect small, medium, and large objects.
+
+Output: a rich feature map containing important visual patterns.
+
+2. Neck (Feature Fusion)
+
+Upsample (yellow): Increases feature map size to align with earlier layers.
+
+Concat (orange diamonds): Combines shallow (detail-rich) and deep (context-rich) features.
+
+Conv / C2f: Further processes the fused features.
+
+Output: a multi-scale feature pyramid that makes detection robust across different object sizes.
+
+3. Head (Prediction)
+
+Detect layers (orange): Final layers that predict:
+
+Bounding boxes (location of objects)
+
+Objectness score (probability an object exists)
+
+Class probabilities (which class the object belongs to)
+
+Output: detected objects with bounding boxes, labels, and confidence scores at multiple scales (small, medium, large).
+
+Overall Flow
+
+Input image → Backbone (extracts features)
+
+Features → Neck (fuses information from different levels)
+
+Fused features → Head (makes predictions)
+
+Final Output → Object detections with bounding boxes + class labels + confidence
+
+
+
 ---
 ## Installation & Requirements
 This project runs on **Google Colab** (recommended).  
