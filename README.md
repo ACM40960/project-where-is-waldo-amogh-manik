@@ -1,15 +1,14 @@
-# 🕵️‍♂️ Where’s Waldo? – Object Detection using YOLOv8
+# Where’s Waldo? – Object Detection using YOLOv8
 
-## 📖 Overview
+## Overview
 This project implements an **object detection model** to automatically find *Waldo* in images using the **YOLOv8 deep learning architecture**.  
 The dataset was prepared, trained, and evaluated in **Google Colab**. Results show how well YOLOv8 can identify Waldo in complex scenes.
 
-> *"Your documentation is complete when someone can use your module without ever having to look at its code."*  
 This README follows that principle — you should be able to reproduce the entire pipeline from dataset to results using only this guide.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Build an end-to-end deep learning pipeline for detecting Waldo.
 - Preprocess dataset into YOLOv8-compatible format.
 - Train YOLOv8 model with optimized parameters.
@@ -18,7 +17,7 @@ This README follows that principle — you should be able to reproduce the entir
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 WhereIsWaldo/
 │── datasets/
@@ -35,32 +34,23 @@ WhereIsWaldo/
 │── README.md # this file
 
 
----
-
-## ⚙️ Installation & Requirements
+## Installation & Requirements
 This project runs on **Google Colab** (recommended).  
-Alternatively, install locally:
+Alternatively, install locally:-
 
-```bash
+
 pip install ultralytics==8.3.0 opencv-python matplotlib
-
 Dependencies:
-
 Python 3.10+
-
 PyTorch
-
 Ultralytics YOLOv8
-
 OpenCV
-
 Matplotlib
-
 Dataset
 
-Dataset: Where’s Waldo (YOLOv8 format)
+Dataset:- Where’s Waldo (YOLOv8 format)
 
-Structure:
+## Structure:-
 
 train/ → training images + labels
 
@@ -77,7 +67,7 @@ datasets/waldo/
 ├── test/labels
 └── data.yaml
 
-
+## Data(yaml)
 train: /content/datasets/waldo/train/images
 val: /content/datasets/waldo/val/images
 test: /content/datasets/waldo/test/images
@@ -85,11 +75,11 @@ test: /content/datasets/waldo/test/images
 nc: 1
 names: ['Waldo']
 
-Clone & Setup
+## Clone & Setup
 git clone <your-repo-link>
 cd WhereIsWaldo
 
-Train the Model
+## Train the Model
 
 from ultralytics import YOLO
 
@@ -102,34 +92,46 @@ model.train(
     name="waldo_yolov8s"
 )
 
-Evaluate
+## Evaluate
 metrics = model.val()
 print(metrics)  # mAP, Precision, Recall, F1
 
 Inference
 results = model.predict(source="datasets/waldo/test/images", save=True)
 
-Results
+## Results
 
-Key metrics from validation set:
+<img width="638" height="355" alt="waldov8_1" src="https://github.com/user-attachments/assets/3f975c5e-3e3e-4e10-bac0-fe9fed0dd9e4" />
+
+## Key metrics from validation set:-
 
 Precision: XX%
-
 Recall: XX%
-
-mAP50: XX%
-
+mAP50: 87%
 F1-score: XX%
 
-Visual Outputs
-Metric	Visualization
-Precision-Recall	
+## Visual Outputs
+
+Metric
+
+## Visualization
+
+Precision-Recall
+
+<img width="613" height="445" alt="waldov8_2" src="https://github.com/user-attachments/assets/1d0a0db4-1b69-4325-8ec1-83d2fa089e6e" />
+<img width="617" height="443" alt="waldov8_4" src="https://github.com/user-attachments/assets/7629877f-ee4e-47f2-a791-28837850042a" />
+<img width="611" height="442" alt="waldov8_5" src="https://github.com/user-attachments/assets/61941250-7e44-418e-b14a-6ccd696e21b3" />
+<img width="603" height="451" alt="waldov8_3" src="https://github.com/user-attachments/assets/bd1a4d05-775f-4593-8c02-6f886c5cc780" />
 
 Confusion Matrix	
+<img width="577" height="497" alt="waldov8_6" src="https://github.com/user-attachments/assets/d01a1fd6-ad3a-4060-a4cb-a1d820b26599" />
+<img width="572" height="490" alt="waldov8_7" src="https://github.com/user-attachments/assets/3912b445-5e1a-4046-8aca-f110a7380d8d" />
 
-Example Prediction
+## Prediction 
+<img width="645" height="637" alt="wal_final" src="https://github.com/user-attachments/assets/e005577a-24cd-4d2f-b0b3-4c970ec445c0" />
 
-Key Learnings
+
+## Key Learnings
 
 Data formatting (images/labels) is crucial for YOLOv8.
 
@@ -165,11 +167,11 @@ Year: 2025
 
 ---
 
-⚡ Why this README will score high:
-- ✅ Covers **all required sections** (overview, objectives, dataset, usage, results, future work).  
-- ✅ Uses **clean formatting with markdown** (tables, images, code blocks).  
-- ✅ Is **self-contained** → anyone can reproduce your project without looking at your code.  
-- ✅ Aligns with instructor’s examples (concise, not overloaded).  
+ Why this README will score high:
+- Covers **all required sections** (overview, objectives, dataset, usage, results, future work).  
+- Uses **clean formatting with markdown** (tables, images, code blocks).  
+- Is **self-contained** → anyone can reproduce your project without looking at your code.  
+- Aligns with instructor’s examples (concise, not overloaded).  
 
 ---
 
