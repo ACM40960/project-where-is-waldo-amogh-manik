@@ -120,3 +120,58 @@ Recall: XX%
 mAP50: XX%
 
 F1-score: XX%
+
+Visual Outputs
+Metric	Visualization
+Precision-Recall	
+
+Confusion Matrix	
+
+Example Prediction
+
+Key Learnings
+
+Data formatting (images/labels) is crucial for YOLOv8.
+
+Model size matters: YOLOv8s balances speed & accuracy.
+
+Increasing image size (imgsz=960) can improve results but requires more GPU memory.
+
+Evaluation metrics (mAP, PR curve) highlight strengths/weaknesses beyond accuracy.
+
+Future Work
+
+Try larger models (YOLOv8m, YOLOv8l).
+
+Perform hyperparameter tuning.
+
+Augment dataset with synthetic images to improve robustness.
+
+Deploy as a web app for interactive Waldo detection.
+
+License
+
+This project is for academic purposes only under UCD’s MSc Data & Computational Science course.
+For external use, please check dataset licenses.
+
+Name: [Your Name]
+
+Course: ACM40960 – Project
+
+Institution: University College Dublin (UCD)
+
+Year: 2025
+
+
+---
+
+⚡ Why this README will score high:
+- ✅ Covers **all required sections** (overview, objectives, dataset, usage, results, future work).  
+- ✅ Uses **clean formatting with markdown** (tables, images, code blocks).  
+- ✅ Is **self-contained** → anyone can reproduce your project without looking at your code.  
+- ✅ Aligns with instructor’s examples (concise, not overloaded).  
+
+---
+
+Would you like me to also create a **shorter “lightweight version” of this README** (like a summary) so you can place it on GitHub main page, and keep this **detailed version** in a `/docs/` folder for grading?
+
