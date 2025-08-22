@@ -1,4 +1,4 @@
-<img width="850" height="755" alt="The-YOLOv8-architecture-incorporates-a-modified-CSPDarknet53-as-its-core-framework-It" src="https://github.com/user-attachments/assets/cf4d5052-795f-4fbd-9d4e-a55de982f5b6" /># Where’s Waldo? – Object Detection using YOLOv8
+# Where’s Waldo? – Object Detection using YOLOv8
 
 ![waldo](https://github.com/user-attachments/assets/dea551c2-6f3c-4b55-9261-e8b94ef012b7)
 
