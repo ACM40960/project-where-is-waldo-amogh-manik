@@ -19,6 +19,7 @@ This README follows that principle — you should be able to reproduce the entir
 
 ## Project Structure
 
+---
 WhereIsWaldo/
 │── datasets/
 │ └── waldo/ # dataset with train/val/test splits
@@ -33,7 +34,8 @@ WhereIsWaldo/
 │── notebook.ipynb # main Google Colab notebook
 │── README.md # this file
 
-
+---
+---
 ## Installation & Requirements
 This project runs on **Google Colab** (recommended).  
 Alternatively, install locally:-
