@@ -37,6 +37,43 @@ WhereIsWaldo/
 │── notebook.ipynb # main Google Colab notebook
 │── README.md # this file
 ```
+## Methodology
+
+The project followed a structured pipeline to detect **Waldo** in crowded images using YOLOv8:
+
+1. **Dataset Preparation**
+   - Collected the `Where’s Waldo` dataset and converted it into YOLOv8 format.
+   - Ensured proper directory structure (`train/`, `val/`, `test/` with `images/` and `labels/`).
+
+2. **Preprocessing**
+   - Normalized labels to YOLO format (class, x_center, y_center, width, height).
+   - Split dataset into train/val/test subsets.
+
+3. **Model Training**
+   - Fine-tuned the **YOLOv8-small** model (`yolov8s.pt`) on the Waldo dataset.
+   - Used augmentation techniques (random flip, mosaic, HSV adjustments).
+   - Training ran for 100 epochs with batch size 16, image size 640.
+
+4. **Evaluation**
+   - Evaluated performance on the validation and test sets.
+   - Metrics: Precision, Recall, F1-score, mAP@50, mAP@50-95.
+   - Plots generated: PR Curve, F1 Curve, Confusion Matrix.
+
+5. **Visualization**
+   - Ran predictions on test images.
+   - Visualized bounding boxes for detected **Waldo**.
+
+---
+
+
+```mermaid
+flowchart TD
+    A[Dataset Preparation] --> B[Preprocessing]
+    B --> C[YOLOv8 Training]
+    C --> D[Model Evaluation]
+    D --> E[Visualization & Results]
+
+```
 ---
 ## Installation & Requirements
 This project runs on **Google Colab** (recommended).  
