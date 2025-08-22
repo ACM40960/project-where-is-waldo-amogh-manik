@@ -133,16 +133,22 @@ Metric
 
 Precision-Recall
 
+
+<img width="625" height="423" alt="waldo_final1" src="https://github.com/user-attachments/assets/7eaa73c8-2418-471c-abdf-19c88680369e" />
 <img width="613" height="445" alt="waldov8_2" src="https://github.com/user-attachments/assets/1d0a0db4-1b69-4325-8ec1-83d2fa089e6e" />
 <img width="617" height="443" alt="waldov8_4" src="https://github.com/user-attachments/assets/7629877f-ee4e-47f2-a791-28837850042a" />
 <img width="611" height="442" alt="waldov8_5" src="https://github.com/user-attachments/assets/61941250-7e44-418e-b14a-6ccd696e21b3" />
 <img width="603" height="451" alt="waldov8_3" src="https://github.com/user-attachments/assets/bd1a4d05-775f-4593-8c02-6f886c5cc780" />
+<img width="628" height="430" alt="waldo_final2" src="https://github.com/user-attachments/assets/d349a9ad-881f-4d34-9c01-46f1138dd256" />
+
 
 
 Confusion Matrix	
 
 <img width="577" height="497" alt="waldov8_6" src="https://github.com/user-attachments/assets/d01a1fd6-ad3a-4060-a4cb-a1d820b26599" />
 <img width="572" height="490" alt="waldov8_7" src="https://github.com/user-attachments/assets/3912b445-5e1a-4046-8aca-f110a7380d8d" />
+<img width="531" height="447" alt="waldo_3" src="https://github.com/user-attachments/assets/5d166233-2fae-41f7-a361-025884170d2d" />
+
 
 ## Prediction 
 <img width="645" height="637" alt="wal_final" src="https://github.com/user-attachments/assets/e005577a-24cd-4d2f-b0b3-4c970ec445c0" />
